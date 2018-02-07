@@ -161,9 +161,9 @@ void ManipEstimator::updateHook(){
 
     Eigen::Vector3d u (cur_grip_pose_in_data.position.x,cur_grip_pose_in_data.position.x,cur_grip_pose_in_data.position.x);
     _u = u/u.norm();
-    double alpha = 1/sqrt(u.transpose()*((hand_jac.data.block<3,DOF_HAND>(0,0)*hand_jac.data.block<3,DOF_HAND>(0,0).transpose()))*u);
+    alpha_force = 1/sqrt(u.transpose()*((hand_jac.data.block<3,DOF_HAND>(0,0)*hand_jac.data.block<3,DOF_HAND>(0,0).transpose()))*u);
 
-    RTT::log(RTT::Error) << "Force Transmission Ratio" << alpha <<std::endl;
+    //RTT::log(RTT::Error) << "Force Transmission Ratio" << alpha_force <<std::endl;
 
 
     ///* TO DO: Set proper filter parameters later*//
@@ -191,7 +191,10 @@ void ManipEstimator::updateHook(){
     manip_measure_out_port.write(manipulability);
 
     manip_ros_out_port.write(manipulability);
+
+    force_transmission_out_port.write(alpha_force);
 }
+
 
 
 
@@ -219,6 +222,11 @@ void ManipEstimator::initializePorts(){
     manip_measure_out_port.setName("manip_measure_out_port");
     manip_measure_out_port.setDataSample(manip_measure_out_data);
     ports()->addPort(manip_measure_out_port);
+
+    force_transmission_out_data = double();
+    force_transmission_out_port.setName("force_transmission_out_port");
+    force_transmission_out_port.setDataSample(force_transmission_out_data);
+    ports()->addPort(force_transmission_out_port);
 
     /** INPUT PORTS **/
     cur_shoulder_pose_in_flow = RTT::NoData;

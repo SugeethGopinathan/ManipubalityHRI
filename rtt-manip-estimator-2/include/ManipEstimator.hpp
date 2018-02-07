@@ -41,10 +41,12 @@ private:
     RTT::OutputPort<double>             manip_measure_out_port;
     double                              manip_measure_out_data;
 
+    RTT::OutputPort<double>             force_transmission_out_port;
+    double                              force_transmission_out_data;
+
+
 
     /** INPUT PORTS **/
-
-
 
     // Shoulder position with respect to camera frame
 
@@ -56,6 +58,15 @@ private:
     RTT::InputPort<geometry_msgs::Pose> cur_grip_pose_in_port;
     RTT::FlowStatus                       cur_grip_pose_in_flow;
     geometry_msgs::Pose                 cur_grip_pose_in_data;
+
+
+    // Output port for the visualization of joint states into ROS
+    RTT::OutputPort<sensor_msgs::JointState> arm_conf_out_port;
+    sensor_msgs::JointState arm_conf_out_data;
+
+    // Output port for manipulability visualization
+    RTT::OutputPort<double> manip_ros_out_port;
+    double manip_ros_out_data;
 
 
 
@@ -92,13 +103,6 @@ private:
 
     Eigen::MatrixXd weights;
 
-    // Output port for the visualization of joint states into ROS
-    RTT::OutputPort<sensor_msgs::JointState> arm_conf_out_port;
-    sensor_msgs::JointState arm_conf_out_data;
-
-    // Output port for manipulability visualization
-    RTT::OutputPort<double> manip_ros_out_port;
-    double manip_ros_out_data;
 
 
     // Filter_param
@@ -107,6 +111,7 @@ private:
     std::vector<double> _filter_vector_in,_filter_vector_out;
     // Force transmission
     Eigen::Vector3d u,_u;
+    double alpha_force;
 
 };
 #endif
