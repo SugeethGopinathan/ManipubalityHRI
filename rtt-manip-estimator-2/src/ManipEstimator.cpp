@@ -163,7 +163,7 @@ void ManipEstimator::updateHook(){
     _u = u/u.norm();
     double alpha = u.transpose()*((hand_jac.data.block<3,DOF_HAND>(0,0)*hand_jac.data.block<3,DOF_HAND>(0,0).transpose()))*u;
 
-    RTT::log(RTT::Info) << "Force Transmission Ratio" << alpha <<std::endl;
+    RTT::log(RTT::Error) << "Force Transmission Ratio" << alpha <<std::endl;
 
 
     ///* TO DO: Set proper filter parameters later*//
