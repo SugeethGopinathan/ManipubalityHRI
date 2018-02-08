@@ -1,0 +1,728 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.8.3' compiled with GCC 5.4.0. Running in GNU/Linux.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 1518106205148871969 ticks ( 1.51811e+09 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.000 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffnessXYZ/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-const-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-jr3-ft-sensor/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-pose-manager/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-estimator-2/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-impedance/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-linear-variable-stiffness/build/orocos/:/home/kukalwr/ws/underlay/devel/lib/orocos:/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/kinetic/lib/orocos:/citk/systems/cogimon-minimal-nightly/lib/orocos: . Searching in: /home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffnessXYZ/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-const-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-jr3-ft-sensor/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-pose-manager/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-estimator-2/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-impedance/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-linear-variable-stiffness/build/orocos/:/home/kukalwr/ws/underlay/devel/lib/orocos:/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/kinetic/lib/orocos:/citk/systems/cogimon-minimal-nightly/lib/orocos
+0.000 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.000 [ Info   ][Logger] Loading plugin libraries from directory /home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/./plugins ...
+0.001 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.001 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.001 [ Info   ][Logger] Loading plugin libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/./plugins ...
+0.001 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading typekit libraries from directory /home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/./types ...
+0.002 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.002 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.015 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.015 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.015 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.015 [ Info   ][Logger] Loading typekit libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/./types ...
+0.023 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for rt_string
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.023 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.023 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.023 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffnessXYZ/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-const-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-jr3-ft-sensor/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-pose-manager/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-estimator-2/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-impedance/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-linear-variable-stiffness/build/orocos/:/home/kukalwr/ws/underlay/devel/lib/orocos:/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/kinetic/lib/orocos:/citk/systems/cogimon-minimal-nightly/lib/orocos: . Searching in: /home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffnessXYZ/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-const-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-jr3-ft-sensor/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-pose-manager/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-estimator-2/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-impedance/build/orocos/:/home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-linear-variable-stiffness/build/orocos/:/home/kukalwr/ws/underlay/devel/lib/orocos:/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos:/opt/ros/kinetic/lib/orocos:/citk/systems/cogimon-minimal-nightly/lib/orocos
+0.023 [ Info   ][Logger] OCL factory set for real-time logging
+0.023 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.023 [ Info   ][Deployer] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8106 ).
+0.023 [ Info   ][Logger] No site file was found. Importing 'ocl' by default.
+0.023 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl ...
+0.024 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-gnulinux.so'
+0.025 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/liborocos-ocl-common-gnulinux.so'
+0.032 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-netcdf-gnulinux.so'
+0.032 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::NetcdfReporting'
+0.033 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/liborocos-ocl-logging-gnulinux.so'
+0.034 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.035 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/liborocos-ocl-timer-gnulinux.so'
+0.036 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::HelloWorld'
+0.036 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/types ...
+0.038 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.038 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.038 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/kukalwr/ws/underlay_isolated/install_isolated/lib/orocos/gnulinux/ocl/plugins ...
+0.038 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'print' from 'print'
+0.039 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'os' from 'os'
+0.039 [ Info   ][ComponentLoader::import(path_list)] Importing directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl ...
+0.040 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-gnulinux.so'
+0.041 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-common-gnulinux.so'
+0.042 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-netcdf-gnulinux.so'
+0.042 [ Warning][ComponentLoader::import(path_list)] Component type name OCL::NetcdfReporting already used: overriding.
+0.042 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::NetcdfReporting'
+0.042 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-logging-gnulinux.so'
+0.043 [ Warning][ComponentLoader::import(path_list)] Component type name OCL::logging::Log4cxxAppender already used: overriding.
+0.043 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.044 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-timer-gnulinux.so'
+0.044 [ Warning][ComponentLoader::import(path_list)] Component type name OCL::HelloWorld already used: overriding.
+0.044 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::HelloWorld'
+0.044 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/types ...
+0.044 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/plugins ...
+0.044 [ Info   ][Logger] Loading Service or Plugin scripting in TaskContext Deployer
+0.045 [ Info   ][Logger] Found complete interface of requested service 'scripting'
+0.045 [ Info   ][Logger] Running Script ft_stiff.ops ...
+0.045 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+0.045 [ Info   ][GlobalEngine] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8107 ).
+0.045 [ Info   ][ComponentLoader::import(path_list)] Importing directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/eigen_typekit ...
+0.045 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/eigen_typekit/types ...
+0.047 [ Info   ][TypekitRepository::Import] Loading Typekit Eigen.
+0.047 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'Eigen' from 'eigen_typekit'
+0.047 [ Info   ][ComponentLoader::import(path_list)] Importing directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/rst-rt_typekit ...
+0.047 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/rst-rt_typekit/types ...
+0.071 [ Info   ][TypekitRepository::Import] Loading Typekit rst-rt.
+0.071 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'rst-rt' from 'rst-rt_typekit'
+0.071 [ Info   ][ComponentLoader::import(path_list)] Importing directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/kdl_typekit ...
+0.071 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/kdl_typekit/types ...
+0.072 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://KDL.
+0.072 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'kdl-corba-types' from 'kdl-transport-corba'
+0.087 [ Info   ][TypekitRepository::Import] Loading Typekit KDL.
+0.087 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for KDL.Frame
+0.087 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for KDL.Rotation
+0.087 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for KDL.Twist
+0.087 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for KDL.Vector
+0.087 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for KDL.Wrench
+0.087 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'KDL' from 'kdl_typekit'
+0.088 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-impedance/build/orocos/gnulinux/rtt-fri-cartesian-impedance ...
+0.095 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'RttFriCartImpedCtrl'
+0.096 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='lwr'
+0.096 [ Info   ][lwr] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8108 ).
+0.096 [ Info   ][loadComponent] Adding lwr as new peer:  OK.
+0.096 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='lwr'
+0.096 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+0.096 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+0.096 [ Warning][lwr] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+0.096 [ Info   ][lwr] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.002 (PID= 8109 ).
+0.097 [ Info   ][ScriptingService] Opening FRI Version 1.0.4101.8198 Interface for LWR ROS server
+0.097 [ Info   ][ScriptingService] Checking if the robot is Stopped...
+0.097 [ Info   ][ScriptingService] Please, start the KRL script now.
+1.168 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.170 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.172 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.174 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.176 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/rtt-fri-cartesian-pose-manager/build/orocos/gnulinux/rtt-fri-cartesian-pose-manager ...
+1.176 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.178 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.180 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.182 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.184 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.186 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.188 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.190 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.192 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.194 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.196 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.198 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.200 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.202 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.204 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.206 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.207 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'CartesianPoseManager'
+1.208 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='test'
+1.208 [ Info   ][test] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8110 ).
+1.208 [ Info   ][loadComponent] Adding test as new peer:  OK.
+1.208 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.208 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='test'
+1.208 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.208 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.208 [ Warning][test] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.209 [ Info   ][test] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.002 (PID= 8111 ).
+1.209 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_geometry_msgs ...
+1.210 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_geometry_msgs/types ...
+1.210 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.212 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.214 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.216 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.218 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.220 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.222 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.224 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.226 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.228 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.230 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.232 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.234 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.236 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.238 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.240 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.242 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.244 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.246 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.248 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.250 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.252 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.254 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.256 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.258 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.260 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.262 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.264 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.266 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.268 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.270 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.272 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.274 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.276 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.278 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.280 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.282 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.284 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.286 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.288 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.290 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.292 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.294 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.296 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.296 [ Info   ][TypekitRepository::Import] Loading Typekit ros-geometry_msgs.
+1.298 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'ros-geometry_msgs' from 'rtt-geometry_msgs-typekit'
+1.298 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.300 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.302 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.304 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.306 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.308 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.310 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.312 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.314 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.316 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-geometry_msgs.
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Accel
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/AccelStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/AccelWithCovariance
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/AccelWithCovarianceStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Inertia
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/InertiaStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Point
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Point32
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PointStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Polygon
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PolygonStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Pose
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Pose2D
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseArray
+1.316 [ Info   ][TypekitRepository::Import] Cartesian pose port is not connected!
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseWithCovariance
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/PoseWithCovarianceStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Quaternion
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/QuaternionStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Transform
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TransformStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Twist
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistWithCovariance
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/TwistWithCovarianceStamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Vector3
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Vector3Stamped
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/Wrench
+1.316 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /geometry_msgs/WrenchStamped
+1.316 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'rtt-ros-geometry_msgs-transport' from 'rtt-geometry_msgs-ros-transport'
+1.317 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_ros ...
+1.317 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_ros/types ...
+1.318 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.320 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.322 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.324 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.326 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.328 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.330 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.332 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.334 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.336 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.338 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.340 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.342 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.343 [ Info   ][TypekitRepository::Import] Loading Typekit ros-primitives.
+1.343 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'ros-primitives' from 'rtt-ros-primitives-typekit'
+1.343 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_ros/plugins ...
+1.344 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.345 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Plugin 'ros' from 'rtt_ros_service'
+1.345 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_rosnode ...
+1.345 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_rosnode/plugins ...
+1.345 [ Info   ][ComponentLoader::import(path_list)] Initializing ROS node in Orocos plugin...
+1.346 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.348 [ Info   ][ComponentLoader::import(path_list)] ROS node spinner started (1 thread).
+1.348 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Plugin 'rosnode' from 'rtt_rosnode'
+1.348 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_sensor_msgs ...
+1.348 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_sensor_msgs/types ...
+1.348 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.350 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.352 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.354 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.356 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.358 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.360 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.362 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.364 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.366 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.368 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.370 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.372 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.374 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.376 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.378 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.380 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.382 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.384 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.386 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.388 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.390 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.392 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.394 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.396 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.398 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.400 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.402 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.404 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.406 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.408 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.410 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.412 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.414 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.416 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.418 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.420 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.422 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.424 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.426 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.428 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.430 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.432 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.434 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.436 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.438 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.440 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.442 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.444 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.446 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.448 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.450 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.452 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.454 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.456 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.458 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.460 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.462 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.464 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.466 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.468 [ Info   ][TypekitRepository::Import] Loading Typekit ros-sensor_msgs.
+1.468 [ Warning][TypekitRepository::Import] Cartesian pose port is not connected!
+1.469 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'ros-sensor_msgs' from 'rtt-sensor_msgs-typekit'
+1.470 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.472 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.474 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.476 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.478 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.480 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.482 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.484 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.486 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.488 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.490 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.492 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.493 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-sensor_msgs.
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/BatteryState
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/CameraInfo
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/ChannelFloat32
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/CompressedImage
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/FluidPressure
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Illuminance
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Image
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Imu
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JointState
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Joy
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JoyFeedback
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/JoyFeedbackArray
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/LaserEcho
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/LaserScan
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/MagneticField
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/MultiDOFJointState
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/MultiEchoLaserScan
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/NavSatFix
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/NavSatStatus
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointCloud
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointCloud2
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/PointField
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Range
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/RegionOfInterest
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/RelativeHumidity
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/Temperature
+1.493 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /sensor_msgs/TimeReference
+1.493 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'rtt-ros-sensor_msgs-transport' from 'rtt-sensor_msgs-ros-transport'
+1.493 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_sensor_msgs/plugins ...
+1.494 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.496 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.497 [ Info   ][ComponentLoader::import(path_list)] Successfully registered ROS service factory for "sensor_msgs/SetCameraInfo".
+1.497 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Plugin 'rtt_sensor_msgs_ros_service_proxies' from 'rtt_sensor_msgs_rosservice_proxies'
+1.497 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_visualization_msgs ...
+1.497 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/kukalwr/ws/underlay/devel/lib/orocos/gnulinux/rtt_visualization_msgs/types ...
+1.498 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.500 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.502 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.504 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.505 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-visualization_msgs.
+1.505 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'rtt-ros-visualization_msgs-transport' from 'rtt-visualization_msgs-ros-transport'
+1.506 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.508 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.510 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.512 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.514 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.516 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.518 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.520 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.522 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.524 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.526 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.528 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.530 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.532 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.534 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.536 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.538 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.540 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.542 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.544 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.546 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.548 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.550 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.552 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.554 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.556 [ Info   ][TypekitRepository::Import] Loading Typekit ros-visualization_msgs.
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/ImageMarker
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/InteractiveMarker
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/InteractiveMarkerControl
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/InteractiveMarkerFeedback
+1.556 [ Info   ][TypekitRepository::Import] Cartesian pose port is not connected!Registered new 'ros' transport for /visualization_msgs/InteractiveMarkerInit
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/InteractiveMarkerPose
+1.556 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/InteractiveMarkerUpdate
+1.557 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/MarkerArray
+1.557 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/Marker
+1.557 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /visualization_msgs/MenuEntry
+1.557 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'ros-visualization_msgs' from 'rtt-visualization_msgs-typekit'
+1.557 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-estimator-2/build/orocos/gnulinux/rtt-manip-estimator-2 ...
+1.558 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.560 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.562 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.564 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.566 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.568 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.570 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.572 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.574 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.576 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.578 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'ManipEstimator'
+1.578 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='manip'
+1.578 [ Info   ][manip] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8124 ).
+1.578 [ Warning][loadComponent] Cartesian pose port is not connected!
+1.579 [ Info   ][loadComponent] Human Arm URDF loaded
+1.579 [ Info   ][loadComponent] Adding manip as new peer:  OK.
+1.579 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='manip'
+1.579 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.579 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.579 [ Warning][manip] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.579 [ Info   ][manip] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.001 (PID= 8125 ).
+1.579 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/test_bridge/build/orocos/gnulinux/test_bridge ...
+1.580 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.582 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'test_bridge'
+1.582 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='tt'
+1.582 [ Info   ][tt] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8126 ).
+1.582 [ Info   ][loadComponent] Adding tt as new peer:  OK.
+1.582 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.582 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='tt'
+1.582 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.582 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.583 [ Warning][tt] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.583 [ Info   ][tt] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.001 (PID= 8127 ).
+1.584 [ Warning][grip_pose] Cartesian pose port is not connected!
+1.585 [ Info   ][ScriptingService] Created input stream for input port  Grip Pose Port
+1.586 [ Warning][shoulder_pose] Cartesian pose port is not connected!
+1.587 [ Info   ][ScriptingService] Created input stream for input port  Shoulder Pose Port
+1.588 [ Info   ][connect] Connected Port tt.outport_grip to  manip.cur_grip_pose_in_port.
+1.588 [ Info   ][connect] Connected Port tt.outport_shoulder to  manip.cur_shoulder_pose_in_port.
+1.588 [ Warning][/joint_states] Cartesian pose port is not connected!
+1.588 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='RosPublishActivity'
+1.588 [ Info   ][RosPublishActivity] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8143 ).
+1.588 [ Info   ][ScriptingService] Created output stream for output port arm_conf_out_port
+1.588 [ Warning][ScriptingService] The protocol with id 3 did not register a fall-back handler for unknown types!
+1.589 [ Warning][ScriptingService]   triggered by: unknown_t which does not have a transport.
+1.589 [ ERROR  ][ScriptingService] Could not create transport stream for port manip_ros_out_port with transport id 3
+1.589 [ ERROR  ][ScriptingService] No such transport registered. Check your policy.transport settings or add the transport for type double
+1.589 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/build/orocos/gnulinux/rtt-forceTrans-to-stiffness ...
+1.590 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.592 [ Warning][ComponentLoader::import(path_list)] Cartesian pose port is not connected!
+1.594 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'FTToStiffness'
+1.594 [ Warning][ScriptingService] Cartesian pose port is not connected!
+1.594 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='stiff'
+1.594 [ Info   ][stiff] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8144 ).
+1.595 [ Info   ][loadComponent] Adding stiff as new peer:  OK.
+1.595 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='stiff'
+1.595 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.595 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.595 [ Warning][stiff] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.595 [ Info   ][stiff] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.001 (PID= 8145 ).
+1.595 [ Info   ][connect] Connected Port manip.force_transmission_out_port to  stiff.force_transmission_in_port.
+1.595 [ Info   ][connect] Connected Port stiff.cart_stiffdamp_out_port to  test.des_cart_stiffdamp_in_port.
+1.595 [ Info   ][connect] Connected Port test.cur_cart_pose_in_port to  lwr.current_cartesian_pose.
+1.596 [ Info   ][connect] Connected Port test.cart_pose_loop_out_port to  lwr.des_cart_pose.
+1.596 [ Info   ][connect] Connected Port test.cart_pose_out_port to  lwr.des_cart_pose.
+1.596 [ Info   ][connect] Connected Port test.cart_stiffdamp_out_port to  lwr.des_stiff_damp.
+1.596 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/kukalwr/git_repos/ManipubalityHRI/rtt-jr3-ft-sensor/build/orocos/gnulinux/rtt-jr3-ft-sensor ...
+1.598 [ Info   ][ComponentLoader::import(path_list)] 0:low qual sending
+1.600 [ Info   ][ComponentLoader::import(path_list)] 0:low qual sending
+1.600 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'RTT_JR3'
+1.600 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='jr3'
+1.600 [ Info   ][jr3] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8146 ).
+1.600 [ Info   ][loadComponent] Adding jr3 as new peer:  OK.
+1.601 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='jr3'
+1.601 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.601 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.601 [ Warning][jr3] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.601 [ Info   ][jr3] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.001 (PID= 8147 ).
+1.601 [ Info   ][ScriptingService] Force/Torque sensor configured!
+1.601 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='logger'
+1.601 [ Info   ][logger] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8148 ).
+1.601 [ Info   ][loadComponent] Adding logger as new peer:  OK.
+1.601 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=99, CPU affinity=4294967295, with name='logger'
+1.601 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.601 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.601 [ Warning][logger] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.601 [ Info   ][logger] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0.01 (PID= 8149 ).
+1.602 [ Info   ][ScriptingService] Loading Service or Plugin marshalling in TaskContext logger
+1.602 [ Info   ][ScriptingService] 0:low qual sending
+1.603 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.603 [ Info   ][ReportingComponent] Monitoring OutputPort manip_measure_out_port : ok.
+1.603 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.603 [ Info   ][ReportingComponent] Monitoring OutputPort force_transmission_out_port : ok.
+1.603 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.603 [ Info   ][ReportingComponent] Monitoring OutputPort outport_grip : ok.
+1.603 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.603 [ Info   ][ReportingComponent] Monitoring OutputPort ForceTorqueOutputPort : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort cart_pose_loop_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort cart_stiffdamp_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort current_joint_values : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort manip_measure_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort force_transmission_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] 0:low qual sending
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort outport_grip : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort ForceTorqueOutputPort : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort cart_pose_loop_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort cart_stiffdamp_out_port : ok.
+1.604 [ Info   ][ReportingComponent] Not buffering of data flow connections. You may miss samples.
+1.604 [ Info   ][ReportingComponent] Monitoring OutputPort current_joint_values : ok.
+1.605 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='TaskBrowser'
+1.605 [ Info   ][TaskBrowser] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 8150 ).
+1.606 [ Info   ][Logger] Entering Task Deployer
+1.606 [ Info   ][Logger] 0:low qual sending
+1.608 [ Info   ][Logger] 0:low qual sending
+1.610 [ Info   ][Logger] 0:low qual sending
+1.612 [ Info   ][Logger] 0:low qual sending
+1.614 [ Info   ][Logger] 0:low qual sending
+1.616 [ Info   ][Logger] 0:low qual sending
+1.618 [ Info   ][Logger] 0:low qual sending
+1.620 [ Info   ][Logger] 0:low qual sending
+1.622 [ Info   ][Logger] 0:low qual sending
+1.624 [ Info   ][Logger] 0:low qual sending
+1.626 [ Info   ][Logger] 0:low qual sending
+1.628 [ Info   ][Logger] 0:low qual sending
+1.630 [ Info   ][Logger] 0:low qual sending
+1.632 [ Info   ][Logger] 0:low qual sending
+1.634 [ Info   ][Logger] 0:low qual sending
+1.636 [ Info   ][Logger] 0:low qual sending
+1.638 [ Info   ][Logger] 0:low qual sending
+1.640 [ Info   ][Logger] 0:low qual sending
+1.642 [ Info   ][Logger] 0:low qual sending
+1.644 [ Info   ][Logger] 0:low qual sending
+1.646 [ Info   ][Logger] 0:low qual sending
+1.648 [ Info   ][Logger] 0:low qual sending
+1.650 [ Info   ][Logger] 0:low qual sending
+1.652 [ Info   ][Logger] 0:low qual sending
+1.654 [ Info   ][Logger] 0:low qual sending
+1.656 [ Info   ][Logger] 0:low qual sending
+1.658 [ Info   ][Logger] 0:low qual sending
+1.660 [ Info   ][Logger] 0:low qual sending
+1.662 [ Info   ][Logger] 0:low qual sending
+1.664 [ Info   ][Logger] 0:low qual sending
+1.666 [ Info   ][Logger] 0:low qual sending
+1.668 [ Info   ][Logger] 0:low qual sending
+1.670 [ Info   ][Logger] 0:low qual sending
+1.672 [ Info   ][Logger] 0:low qual sending
+1.674 [ Info   ][Logger] 0:low qual sending
+1.676 [ Info   ][Logger] 0:low qual sending
+1.678 [ Info   ][Logger] 0:low qual sending
+1.680 [ Info   ][Logger] 0:low qual sending
+1.682 [ Info   ][Logger] 0:low qual sending
+1.684 [ Info   ][Logger] 0:low qual sending
+1.686 [ Info   ][Logger] 0:low qual sending
+1.688 [ Info   ][Logger] 0:low qual sending
+1.690 [ Info   ][Logger] 0:low qual sending
+1.692 [ Info   ][Logger] 0:low qual sending
+1.694 [ Info   ][Logger] 0:low qual sending
+1.696 [ Info   ][Logger] 0:low qual sending
+1.698 [ Info   ][Logger] 0:low qual sending
+1.700 [ Info   ][Logger] 0:low qual sending
+1.702 [ Info   ][Logger] 0:low qual sending
+1.704 [ Info   ][Logger] 0:low qual sending
+1.706 [ Info   ][Logger] 0:low qual sending
+1.708 [ Info   ][Logger] 0:low qual sending
+1.710 [ Info   ][Logger] 0:low qual sending
+1.712 [ Info   ][Logger] 0:low qual sending
+1.714 [ Info   ][Logger] 0:low qual sending
+1.716 [ Info   ][Logger] 0:low qual sending
+1.718 [ Info   ][Logger] 0:low qual sending
+1.720 [ Info   ][Logger] 0:low qual sending
+1.722 [ Info   ][Logger] 0:low qual sending
+1.724 [ Info   ][Logger] 0:low qual sending
+1.726 [ Info   ][Logger] 0:low qual sending
+1.728 [ Info   ][Logger] 0:low qual sending
+1.730 [ Info   ][Logger] 0:low qual sending
+1.732 [ Info   ][Logger] 0:low qual sending
+1.734 [ Info   ][Logger] 0:low qual sending
+1.736 [ Info   ][Logger] 0:low qual sending
+1.738 [ Info   ][Logger] 0:low qual sending
+1.740 [ Info   ][Logger] 0:low qual sending
+1.742 [ Info   ][Logger] 0:low qual sending
+1.744 [ Info   ][Logger] 0:low qual sending
+1.746 [ Info   ][Logger] 0:low qual sending
+1.748 [ Info   ][Logger] 0:low qual sending
+1.750 [ Info   ][Logger] 0:low qual sending
+1.752 [ Info   ][Logger] 0:low qual sending
+1.754 [ Info   ][Logger] 0:low qual sending
+1.756 [ Info   ][Logger] 0:low qual sending
+1.758 [ Info   ][Logger] 0:low qual sending
+1.760 [ Info   ][Logger] 0:low qual sending
+1.762 [ Info   ][Logger] 0:low qual sending
+1.764 [ Info   ][Logger] 0:low qual sending
+1.766 [ Info   ][Logger] 0:low qual sending
+1.768 [ Info   ][Logger] 0:low qual sending
+1.770 [ Info   ][Logger] 0:low qual sending
+1.772 [ Info   ][Logger] 0:low qual sending
+1.774 [ Info   ][Logger] 0:low qual sending
+1.776 [ Info   ][Logger] 0:low qual sending
+1.778 [ Info   ][Logger] 0:low qual sending
+1.780 [ Info   ][Logger] 0:low qual sending
+1.782 [ Info   ][Logger] 0:low qual sending
+1.784 [ Info   ][Logger] 0:low qual sending
+1.786 [ Info   ][Logger] 0:low qual sending
+1.788 [ Info   ][Logger] 0:low qual sending
+1.790 [ Info   ][Logger] 0:low qual sending
+1.792 [ Info   ][Logger] 0:low qual sending
+1.794 [ Info   ][Logger] 0:low qual sending
+1.796 [ Info   ][Logger] 0:low qual sending
+1.798 [ Info   ][Logger] 0:low qual sending
+1.800 [ Info   ][Logger] 0:low qual sending
+1.802 [ Info   ][Logger] 0:low qual sending
+1.804 [ Info   ][Logger] 0:low qual sending
+1.806 [ Info   ][Logger] 0:low qual sending
+1.808 [ Info   ][Logger] 0:low qual sending
+1.810 [ Info   ][Logger] 0:low qual sending
+1.812 [ Info   ][Logger] 0:low qual sending
+1.814 [ Info   ][Logger] 0:low qual sending
+1.816 [ Info   ][Logger] 0:low qual sending
+1.818 [ Info   ][Logger] 0:low qual sending
+1.820 [ Info   ][Logger] 0:low qual sending
+1.822 [ Info   ][Logger] 0:low qual sending
+1.824 [ Info   ][Logger] 0:low qual sending
+1.826 [ Info   ][Logger] 0:low qual sending
+1.828 [ Info   ][Logger] 0:low qual sending
+1.830 [ Info   ][Logger] 0:low qual sending
+1.832 [ Info   ][Logger] 0:low qual sending
+1.834 [ Info   ][Logger] 0:low qual sending
+1.836 [ Info   ][Logger] 0:low qual sending
+1.838 [ Info   ][Logger] 0:low qual sending
+1.840 [ Info   ][Logger] 0:low qual sending
+1.842 [ Info   ][Logger] 0:low qual sending
+1.844 [ Info   ][Logger] 0:low qual sending
+1.846 [ Info   ][Logger] 0:low qual sending
+1.848 [ Info   ][Logger] 0:low qual sending
+1.850 [ Info   ][Logger] 0:low qual sending
+1.852 [ Info   ][Logger] 0:low qual sending
+1.854 [ Info   ][Logger] 0:low qual sending
+1.856 [ Info   ][Logger] 0:low qual sending
+1.858 [ Info   ][Logger] 0:low qual sending
+1.860 [ Info   ][Logger] 0:low qual sending
+1.862 [ Info   ][Logger] 0:low qual sending
+1.864 [ Info   ][Logger] 0:low qual sending
+1.866 [ Info   ][Logger] 0:low qual sending
+1.868 [ Info   ][Logger] 0:low qual sending
+1.870 [ Info   ][Logger] 0:low qual sending
+1.872 [ Info   ][Logger] 0:low qual sending
+1.874 [ Info   ][Logger] 0:low qual sending
+1.876 [ Info   ][Logger] 0:low qual sending
+1.878 [ Info   ][Logger] 0:low qual sending
+1.880 [ Info   ][Logger] 0:low qual sending
+1.882 [ Info   ][Logger] 0:low qual sending
+1.884 [ Info   ][Logger] 0:low qual sending
+1.886 [ Info   ][Logger] 0:low qual sending
+1.888 [ Info   ][Logger] 0:low qual sending
+1.890 [ Info   ][Logger] 0:low qual sending
+1.892 [ Info   ][Logger] 0:low qual sending
+1.894 [ Info   ][Logger] 0:low qual sending
+1.896 [ Info   ][Logger] 0:low qual sending
+1.898 [ Info   ][Logger] 0:low qual sending
+1.900 [ Info   ][Logger] 0:low qual sending
+1.902 [ Info   ][Logger] 0:low qual sending
+1.904 [ Info   ][Logger] 0:low qual sending
+1.906 [ Info   ][Logger] 0:low qual sending
+1.908 [ Info   ][Logger] 0:low qual sending
+1.910 [ Info   ][Logger] 0:low qual sending
+1.912 [ Info   ][Logger] 0:low qual sending
+1.914 [ Info   ][Logger] 0:low qual sending
+1.916 [ Info   ][Logger] 0:low qual sending
+1.918 [ Info   ][Logger] 0:low qual sending
+1.920 [ Info   ][Logger] 0:low qual sending
+1.922 [ Info   ][Logger] 0:low qual sending
+1.924 [ Info   ][Logger] 0:low qual sending
+1.926 [ Info   ][Logger] 0:low qual sending
+1.928 [ Info   ][Logger] 0:low qual sending
+1.930 [ Info   ][Logger] 0:low qual sending
+1.932 [ Info   ][Logger] 0:low qual sending
+1.934 [ Info   ][Logger] 0:low qual sending
+1.936 [ Info   ][Logger] 0:low qual sending
+1.938 [ Info   ][Logger] 0:low qual sending
+1.940 [ Info   ][Logger] 0:low qual sending
+1.942 [ Info   ][Logger] 0:low qual sending
+1.944 [ Info   ][Logger] 0:low qual sending
+1.946 [ Info   ][Logger] 0:low qual sending
+1.948 [ Info   ][Logger] 0:low qual sending
+1.950 [ Info   ][Logger] 0:low qual sending
+1.952 [ Info   ][Logger] 0:low qual sending
+1.954 [ Info   ][Logger] 0:low qual sending
+1.956 [ Info   ][Logger] 0:low qual sending
+1.958 [ Info   ][Logger] 0:low qual sending
+1.960 [ Info   ][Logger] 0:low qual sending
+1.962 [ Info   ][Logger] 0:low qual sending
+1.964 [ Info   ][Logger] 0:low qual sending
+1.966 [ Info   ][Logger] 0:low qual sending
+1.968 [ Info   ][Logger] 0:low qual sending
+1.970 [ Info   ][Logger] 0:low qual sending
+1.972 [ Info   ][Logger] 0:low qual sending
+1.974 [ Info   ][Logger] 0:low qual sending
+1.976 [ Info   ][Logger] 0:low qual sending
+1.978 [ Info   ][Logger] 0:low qual sending
+1.980 [ Info   ][Logger] 0:low qual sending
+1.982 [ Info   ][Logger] 0:low qual sending
+1.984 [ Info   ][Logger] 0:low qual sending
+1.986 [ Info   ][Logger] 0:low qual sending
+1.988 [ Info   ][Logger] 0:low qual sending
+1.990 [ Info   ][Logger] 0:low qual sending
+17.874 [ Info   ][Logger] Succesfully calibrated force/torque sensor.

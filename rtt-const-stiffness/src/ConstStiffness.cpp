@@ -20,8 +20,8 @@ ConstStiffness::ConstStiffness(std::string const& name) : TaskContext(name){
     addProperty("stiffness_z",stiffness_z).doc("Stiffness value at Trans axis Z");
 
     addProperty("stiffness_A",stiffness_A).doc("Stiffness value at ROT axis A");
-    addProperty("stiffness_A",stiffness_B).doc("Stiffness value at ROT axis B");
-    addProperty("stiffness_A",stiffness_C).doc("Stiffness value at ROT axis C");
+    addProperty("stiffness_B",stiffness_B).doc("Stiffness value at ROT axis B");
+    addProperty("stiffness_C",stiffness_C).doc("Stiffness value at ROT axis C");
 
 
 }
