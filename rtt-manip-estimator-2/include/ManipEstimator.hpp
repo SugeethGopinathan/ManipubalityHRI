@@ -68,7 +68,8 @@ private:
     RTT::OutputPort<double> manip_ros_out_port;
     double manip_ros_out_data;
 
-
+    RTT::OutputPort<KDL::JntArray> q_hand_out_port;
+    KDL::JntArray q_hand_out_data;
 
     void initializePorts();
 
