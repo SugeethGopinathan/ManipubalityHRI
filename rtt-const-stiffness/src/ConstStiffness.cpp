@@ -5,13 +5,13 @@
 ConstStiffness::ConstStiffness(std::string const& name) : TaskContext(name){
     initializePorts();
 
-    stiffness_x = 5000;
-    stiffness_y = 5000;
-    stiffness_z = 5000;
+    stiffness_x = 10;
+    stiffness_y = 10;
+    stiffness_z = 10;
 
-    stiffness_A = 300;
-    stiffness_B = 300;
-    stiffness_C = 300;
+    stiffness_A = 10;
+    stiffness_B = 10;
+    stiffness_C = 10;
 
 
 
