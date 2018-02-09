@@ -1,18 +1,24 @@
 #include "ManipToStiffness.hpp"
 #include <rtt/Component.hpp>
 #include <iostream>
-
+#include <fstream>
 ManipToStiffness::ManipToStiffness(std::string const& name) : TaskContext(name){
     initializePorts();
 
     stiffness_max = 5000; // ToDo: come up with reasonable values
     stiffness_min = 10;
-    manip_max = 0.037;
-    manip_min = 0.007;
+    //manip_max = 0.037;
+    //manip_min = 0.007;
     max_rot_stiff = 300;
     _stiffness_counter= 0;
     alpha=0.010;
 
+
+    std::ifstream fin("/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/ops-scripts/manip_max.txt");
+    fin >> manip_max;
+
+    std::ifstream finp("/home/kukalwr/git_repos/ManipubalityHRI/rtt-manip-to-stiffness/ops-scripts/manip_min.txt");
+    finp >> manip_min;
 
     addProperty("manip_factor",manip_factor).doc("The manipulability factor for chaning stiffness");
     addProperty("stiffness_max",stiffness_max).doc("Max Stiffness for the linear heuristic");

@@ -7,12 +7,18 @@ FTToStiffness::FTToStiffness(std::string const& name) : TaskContext(name){
 
     stiffness_max = 5000; // ToDo: come up with reasonable values
     stiffness_min = 10;
-    ft_max = 0.33;
-    ft_min = 0.029;
+    //ft_max = 0.33;
+    //ft_min = 0.029;
     max_rot_stiff = 300;
     _stiffness_counter= 0;
     alpha=0.010;
 
+
+    std::ifstream fin("/home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/ops-scripts/Ft_max.txt");
+    fin >> ft_max;
+
+    std::ifstream finp("/home/kukalwr/git_repos/ManipubalityHRI/rtt-forceTrans-to-stiffness/ops-scripts/Ft_min.txt");
+    finp >> ft_min;
 
     addProperty("ft_factor",ft_factor).doc("The ft factor for chaning stiffness");
     addProperty("stiffness_max",stiffness_max).doc("Max Stiffness for the linear heuristic");

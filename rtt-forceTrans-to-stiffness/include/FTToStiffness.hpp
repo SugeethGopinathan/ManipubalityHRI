@@ -8,6 +8,7 @@
 #include <rst-rt/dynamics/JointImpedance.hpp>
 #include <rst-rt/dynamics/Wrench.hpp>
 #include <math.h>
+#include <fstream>
 #define DOF_SIZE 7
 
 class FTToStiffness : public RTT::TaskContext{
