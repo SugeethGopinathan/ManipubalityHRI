@@ -10,6 +10,9 @@ CartesianPoseManager::CartesianPoseManager(std::string const& name) : TaskContex
     stiffdamp_set = false;
     _stiffness_counter= 0;
     alpha=0.010;
+    tcp_off_x = 0;
+    tcp_off_y = 0;
+    tcp_off_z = 0.21;
 
     // TODO: make them get property
     //force_max = 15;
@@ -31,6 +34,14 @@ CartesianPoseManager::CartesianPoseManager(std::string const& name) : TaskContex
     addOperation("setCartesianStiffDamp", &CartesianPoseManager::setCartStiffDamp, this, RTT::ClientThread)
             .doc("Set a Cartesian Stiffness and Damping value for testing.")
             .arg("cart_stiffdamp","Desired cartesian damping and stiffness: 3 translational and 3 rotational");\
+
+    addProperty("tcp_off_x",tcp_off_x).doc("TCP offset in X");
+    addProperty("tcp_off_y",tcp_off_y).doc("TCP offset in Y");
+    addProperty("tcp_off_z",tcp_off_z).doc("TCP offset in Z");
+
+    tcp_offset.x(tcp_off_x);
+    tcp_offset.y(tcp_off_y);
+    tcp_offset.z(tcp_off_z);
 
     // Todo : Add max min force property
 
@@ -104,6 +115,10 @@ void CartesianPoseManager::updateHook(){
         // process:
         cart_pose_loop_out_data = cur_cart_pose_in_data;
         cart_pose_loop_out_port.write(cart_pose_loop_out_data);
+
+
+
+
     }
 
 
@@ -117,6 +132,11 @@ void CartesianPoseManager::updateHook(){
 
     red_res_out_port.write(red_res_out_data);
 
+    // Calculating the TCP pose
+
+    tcp_pose_out_data.p = cart_pose_loop_out_data.p + cart_pose_loop_out_data.M*tcp_offset;
+    tcp_pose_out_data.M = cart_pose_loop_out_data.M;
+    tcp_pose_out_port.write(tcp_pose_out_data);
 
     /*cur_force_torq_in_flow = cur_force_torq_in_port.read(cur_force_torq_in_data);
 
@@ -204,6 +224,10 @@ void CartesianPoseManager::initializePorts(){
     ext_trq_out_port.setDataSample(ext_trq_out_data);
     ports()->addPort(ext_trq_out_port);
 
+    tcp_pose_out_data = KDL::Frame();
+    tcp_pose_out_port.setName("tcp_pose_out_port");
+    tcp_pose_out_port.setDataSample(tcp_pose_out_data);
+    ports()->addPort(tcp_pose_out_port);
 
     /** INPUT PORTS **/
 

@@ -41,6 +41,12 @@ private:
     RTT::OutputPort<KDL::Frame> cart_pose_out_port, cart_pose_loop_out_port;
     KDL::Frame                  cart_pose_out_data, cart_pose_loop_out_data;
 
+
+    RTT::OutputPort<KDL::Frame> tcp_pose_out_port;
+    KDL::Frame                  tcp_pose_out_data;
+    KDL::Vector                 tcp_offset;
+    double tcp_off_x, tcp_off_y, tcp_off_z;
+
     /** INPUT PORTS **/
 
     RTT::InputPort<KDL::Frame> cur_cart_pose_in_port;
