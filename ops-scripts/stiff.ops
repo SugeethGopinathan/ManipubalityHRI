@@ -110,19 +110,28 @@ jr3.configure
 jr3.start
 
 loadComponent("logger", "OCL::FileReporting")
+setActivity("logger",0.01,HighestPriority,ORO_SCHED_RT)
 loadService("logger", "marshalling")
 connectPeers("logger", "manip")
 connectPeers("logger", "tt")
 connectPeers("logger", "jr3")
-connectPeers("logger","test")
+connectPeers("logger", "test")
+connectPeers("logger","stiff")
+connectPeers("logger","lwr")
+
 logger.reportPort("manip","manip_measure_out_port")
+logger.reportPort("manip","manip_elipse_out_port")
+logger.reportPort("manip","force_transmission_out_port")
+logger.reportPort("manip","q_hand_out_port")
 logger.reportPort("tt","outport_grip")
 logger.reportPort("jr3","ForceTorqueOutputPort")
 logger.reportPort("test","cart_pose_loop_out_port")
+logger.reportPort("test","tcp_pose_out_port")
+logger.reportPort("stiff","cart_stiffdamp_out_port")
+logger.reportPort("lwr","current_joint_values")
 logger.configure
-#logger.start
 
-
+jr3.calibrate
 
 
 test.start
