@@ -12,7 +12,7 @@ CartesianPoseManager::CartesianPoseManager(std::string const& name) : TaskContex
     alpha=0.010;
     tcp_off_x = 0;
     tcp_off_y = 0;
-    tcp_off_z = 0.21;
+    tcp_off_z = 0.21205;
 
     // TODO: make them get property
     //force_max = 15;
